@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "123496755968",
+    "firebase_url": "https://get-your-food-bd988.firebaseio.com",
+    "project_id": "get-your-food-bd988",
+    "storage_bucket": "get-your-food-bd988.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123496755968:android:941e58b835c67f87",
+        "android_client_info": {
+          "package_name": "com.example.acer.getyourfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123496755968-hngcr8n4n6r0g5fdkuhstc78c8toda03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.acer.getyourfood",
+            "certificate_hash": "f3e5ab6f525652bcb799239f468d4fe531b5ea42"
+          }
+        },
+        {
+          "client_id": "123496755968-3q9bnjniag6pdssuhql07278kk5bck6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaEo6QGuc-qP-yy7GqzyFPlxbAkk0EUlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123496755968-3q9bnjniag6pdssuhql07278kk5bck6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
