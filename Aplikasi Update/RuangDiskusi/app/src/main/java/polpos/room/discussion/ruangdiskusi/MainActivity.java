@@ -1,9 +1,5 @@
 package polpos.room.discussion.ruangdiskusi;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,9 +14,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn_sign_out = (Button)findViewById(R.id.btn_sign_out);
+        btn_sign_out = findViewById(R.id.btn_sign_out);
         btn_sign_out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,12 +87,14 @@ public class MainActivity extends AppCompatActivity {
                 //GetUser
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 //show email user
+                assert user != null;
                 Toast.makeText(this, ""+user.getEmail(), Toast.LENGTH_SHORT).show();
                 //get button sign out
                 btn_sign_out.setEnabled(true);
             }
             else
             {
+                assert response != null;
                 Toast.makeText(this, ""+response.getError().getMessage(), Toast.LENGTH_SHORT).show();
             }
         }

@@ -2,4 +2,8 @@
     <string name="app_name">RuangDiskusi</string>
     <string name="sign_out">Sign Out</string>
     <string name="search_anything">Search anything...</string>
+    <string name="description">Description...</string>
+    <string name="room_name">Room Name</string>
+    <string name="reset">RESET</string>
+    <string name="create">CREATE</string>
 </resources>
